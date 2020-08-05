@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Hotels Regression" >
+<listeners>
+	<!-- <listener class-name="com.verizon.listeners.ScreenshotListener" /> -->
+	<!-- <listener class-name="com.hotels.listeners.TestAllureListener" /> -->
+  <!--   <listener class-name="com.hotels.listeners.ExtentReportListener" /> -->
+    <listener class-name="com.hotels.listeners.pdfListener" />
+	</listeners>
+
+<parameter name="browser" value="chrome"/>
+  <test name="Test">
+    <classes>
+     <!--  <class name="com.qa.hotels.test.HotelsPageTest"/>
+        <class name="com.qa.hotels.test.HotelsPage3star"/> -->
+      <class name="com.qa.hotels.test.HomePageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
